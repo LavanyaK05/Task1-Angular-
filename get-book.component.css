@@ -1,0 +1,27 @@
+.container{
+    padding: 5% 5%;
+    margin: 5% 5%;
+}
+#back{
+  
+}
+
+#outertable td {
+    border: 1px;
+    padding-left: 20px;
+    padding-top: 10px;
+  }
+  #innertable {
+    padding: 1px;
+  }
+  #innertable table tbody tr td{
+    padding: 0px ;
+  } 
+  #innertable td{
+      padding-left: 0 px;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      padding-right: 0px;     
+  }
+  
+  

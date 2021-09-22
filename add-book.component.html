@@ -1,0 +1,53 @@
+<!--main page form-->
+
+<!-- <div style="text-align: center">
+  <h1>{{message}}</h1>
+</div> -->
+
+
+<div class="container bg-light">
+    
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand">Books store</a>
+      <form class="form-inline">
+        <button routerLink="/addBook" class="btn btn-primary my-2 my-sm-0" id="addBook" type="submit">Add Book</button>
+        <button routerLink="/books" class="btn btn-primary my-2 my-sm-0" id="getBook" type="submit">Get Books</button>
+        <!-- <button routerLink="" class="btn btn-primary my-2 my-sm-0" id="addBook" type="submit">Add Book</button>
+        <button routerLink="/get-book"  class="btn btn-primary my-2 my-sm-0" id="getBook" type="submit">Get Books</button> -->
+      </form>
+    </nav>
+  
+      <form>
+        <!-- <fieldset> -->
+
+           <div class="form-group">
+            <label for="title">Title</label>
+            <!-- <input [(ngModel)]="book.bname" type="text" class="form-control" id="title" placeholder="Title"> -->
+            <input #title required type="text" 
+                            class="form-control" maxlength="28" placeholder="title" />
+            
+          </div>
+          <div class="form-group">
+            <label for="author">Author</label>
+            <input #author type="text" class="form-control" id="author" placeholder="Author">
+          </div>
+          <div class="form-group">
+            <label for="price">Price</label>
+            <input #price type="text" class="form-control" id="price" placeholder="Price">
+          </div>    
+          
+          <div class="form-group">
+            <label for="datePicker">Published date</label>
+            <input #date type="date" class="form-control" id="datePicker" placeholder="">
+          </div> 
+          
+          <button id="submitBtn" type="submit" class="btn btn-lg btn-success" (click)="addBooks(title.value,author.value,price.value,date.value)"> Submit</button> 
+        <!-- </fieldset> -->
+        </form>
+        
+       
+
+        <!-- <router-outlet></router-outlet> -->
+      
+  
+  </div>

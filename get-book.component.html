@@ -1,0 +1,43 @@
+<!-- <div class="container bg-light">
+    <button class="btn btn-primary my-2 my-sm-0 pull-right" id="back" type="submit">Back</button>
+</div> -->
+
+<div class="container" style="border-radius: 5px; background-color: #f2f2f2; padding: 10px">
+    <b>
+      <h1 style="text-align:center;">Books Store</h1>
+    </b>
+    <!--displaying the list of books-->
+    <div *ngFor="let book of books" class="col" style=" background-color: white">
+      <table class="table" id="outertable">
+        <tr>
+          <td>
+            <table class="table" id="innertable">
+              <tbody>
+                <tr>
+                  <td width="150px">Title </td>
+                  <td>: {{ book.bname }}</td>
+                </tr>
+                <tr>
+                  <td>Author</td>
+                  <td>: {{ book.bauthor}}</td>
+                </tr>
+                <tr>
+                  <td>Price </td>
+                  <td>: {{book.bprice}} /-</td>
+                </tr>
+                <tr>
+                  <td>Published on </td>
+                  <td>: {{book.bdate | date:'dd/mm/yyyy'}}</td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="col-sm-12">
+      <a routerLink="/addBook">
+        <button class="btn btn-primary  pull-right ">Back</button>
+      </a>
+    </div>
+  </div>
